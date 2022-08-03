@@ -5,11 +5,12 @@ export default {
     head:[
         ['link', { rel: 'icon', href: '/vitepress-docs/favicon.ico' }]
     ],
+    lastUpdated: true,
     themeConfig: {
         logo:'/logo.jpeg',
         // siteTitle: "My Custom Title", // 可设置为false
-        lastUpdated: 'Last Updated',
-        outlineTitle:' ',
+        lastUpdatedText: '最后修改时间',
+        outlineTitle:'目录',
         nav: [{
                 text: '指南',
                 link: '/guide/installation',
@@ -46,7 +47,7 @@ export default {
             ]
         }],
         editLink: {
-            pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+            pattern: 'https://github.com/xiaoshunshi/vitepress-docs/tree/main/docs/:path',
             text: '编辑链接'
         },
         footer: {
