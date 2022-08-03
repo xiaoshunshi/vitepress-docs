@@ -1,12 +1,12 @@
 export default {
     title: "小顺石的VitePress博客",
     description: "Just playing around.",
+    base: '/vitepress-docs',
     themeConfig: {
         // siteTitle: "My Custom Title", // 可设置为false
         lastUpdated: 'Last Updated',
         logo:'/assect/logo.jpeg',
         outlineTitle:' ',
-        base: '/vitepress-docs',
         nav: [{
                 text: '指南',
                 link: '/guide/installation',
