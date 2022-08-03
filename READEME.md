@@ -1,2 +1,3 @@
 # vitepress 搭建的个人博客
 - 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
+- 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

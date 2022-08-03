@@ -6,6 +6,7 @@ export default {
         lastUpdated: 'Last Updated',
         logo:'/assect/logo.jpeg',
         outlineTitle:' ',
+        base: '/vitepress-docs/',
         nav: [{
                 text: '指南',
                 link: '/guide/installation',
