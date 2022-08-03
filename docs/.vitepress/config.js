@@ -1,7 +1,7 @@
 export default {
     title: "小顺石的VitePress博客",
     description: "Just playing around.",
-    base: '/vitepress-docs',
+    base: '/vitepress-docs/',
     themeConfig: {
         // siteTitle: "My Custom Title", // 可设置为false
         lastUpdated: 'Last Updated',
