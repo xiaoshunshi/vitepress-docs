@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app.aa42310d.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"node/node.md","lastUpdated":1659595187000}'),o={name:"node/node.md"};function n(r,d,s,c,p,_){return a(),t("div")}var f=e(o,[["render",n]]);export{m as __pageData,f as default};
