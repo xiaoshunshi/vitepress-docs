@@ -2,39 +2,40 @@ export default {
     title: "Xiao Shunshi",
     description: "Just playing around.",
     base: '/vitepress-docs/',
+    appearance:false,
     head: [
         ['link', {
             rel: 'icon',
             href: '/vitepress-docs/favicon.ico'
         }]
     ],
-    prev: 'Get Started | Markdown',
     lastUpdated: true,
     themeConfig: {
         logo: '/logo.jpeg',
         // siteTitle: "My Custom Title", // 可设置为false
         lastUpdatedText: '最后修改时间',
         outlineTitle: '目录',
+        socialLinks: [{ icon: 'github', link: 'https://github.com/xiaoshunshi/vitepress-docs' }],
         nav: [{
                 text: '指南',
                 link: '/guide/installation',
                 activeMatch: '/guide/',
             },
-            {
-                text: 'Dropdown Menu',
-                items: [{
-                    // You may also omit the title.
-                    items: [{
-                            text: 'Section A Item A',
-                            link: '...'
-                        },
-                        {
-                            text: 'Section B Item B',
-                            link: '...'
-                        }
-                    ]
-                }]
-            }
+            // {
+            //     text: 'Dropdown Menu',
+            //     items: [{
+            //         // You may also omit the title.
+            //         items: [{
+            //                 text: 'Section A Item A',
+            //                 link: '...'
+            //             },
+            //             {
+            //                 text: 'Section B Item B',
+            //                 link: '...'
+            //             }
+            //         ]
+            //     }]
+            // }
         ],
         sidebar: [{
             text: '指南',

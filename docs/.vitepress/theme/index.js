@@ -1,6 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 // 修改全局样式
-// import './custom.css'
+import './custom.css'
 
 
 // 导入主题样式

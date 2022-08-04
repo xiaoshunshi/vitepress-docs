@@ -2,29 +2,29 @@
 layout: home
 
 hero:
-  name: VitePress
-  text: Vite & Vue powered static site generator.
-  tagline: Lorem ipsum...
+  name: 小顺石VitePress
+  text: VitePress个人博客
+  tagline: 哎，我就是玩...
 #   image:
 #     src: /logo.png
 #     alt: VitePress
   actions:
     - theme: brand
-      text: Get Started
-      link: /guide/what-is-vitepress
+      text: 起步
+      link: /guide/installation
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/xiaoshunshi/vitepress-docs
 features:
   - icon: ⚡️
-    title: Vite, The DX that can't be beat
-    details: Lorem ipsum...
+    title: 前端
+    details: html,css,js,vue,react,angular
   - icon: 🖖
-    title: Power of Vue meets Markdown
-    details: Lorem ipsum...
+    title: 后端
+    details: nodejs,express,koa2,nestjs
   - icon: 🛠️
-    title: Simple and minimal, always
-    details: Lorem ipsum...
+    title: 数据库
+    details: mysql,mongodb
 ---
 
 <!-- <script setup>

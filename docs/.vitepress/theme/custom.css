@@ -1,4 +1,6 @@
 :root {
-    --vp-c-brand: #646cff;
-    --vp-c-brand-light: #747bff;
+    /* --vp-c-brand: #646cff;
+    --vp-c-brand-light: #747bff; */
+    --vp-code-block-bg:#f5f7fa;
+    --vp-code-block-color: #303133;
   }
