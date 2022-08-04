@@ -1,8 +1,12 @@
+import { nav } from './config/nav';
+import {
+    sidebar
+} from './config/sidbar'
 export default {
     title: "Xiao Shunshi",
     description: "Just playing around.",
     base: '/vitepress-docs/',
-    appearance:false,
+    appearance: false,
     head: [
         ['link', {
             rel: 'icon',
@@ -15,76 +19,12 @@ export default {
         // siteTitle: "My Custom Title", // 可设置为false
         lastUpdatedText: '最后修改时间',
         outlineTitle: '目录',
-        socialLinks: [{ icon: 'github', link: 'https://github.com/xiaoshunshi/vitepress-docs' }],
-        nav: [{
-                text: '指南',
-                link: '/guide/installation',
-                activeMatch: '/guide/',
-            },
-            {
-                text: '教程',
-                items: [{
-                    // You may also omit the title.
-                    items: [{
-                            text: '前端',
-                            link: '/html/html'
-                        },
-                        {
-                            text: '后端',
-                            link: '/node/node'
-                        },
-                        {
-                            text: '数据库',
-                            link: '/sql/mysql'
-                        }
-                    ]
-                }]
-            }
-        ],
-        sidebar: [{
-            text: '指南',
-            items: [
-                // This shows `/guide/index.md` page.
-                {
-                    text: '安装',
-                    link: '/guide/installation'
-                },
-                {
-                    text: '快速开始',
-                    link: '/guide/quieStart'
-                }
-            ]
-        },
-        {
-            text: '前端',
-            items: [
-                // This shows `/guide/index.md` page.
-                {
-                    text: 'Html',
-                    link: '/html/html'
-                }
-            ]
-        },
-        {
-            text: '后端',
-            items: [
-                // This shows `/guide/index.md` page.
-                {
-                    text: 'Node',
-                    link: '/node/node'
-                }
-            ]
-        },
-        {
-            text: '数据库',
-            items: [
-                // This shows `/guide/index.md` page.
-                {
-                    text: 'mysql',
-                    link: '/sql/mysql'
-                }
-            ]
+        socialLinks: [{
+            icon: 'github',
+            link: 'https://github.com/xiaoshunshi/vitepress-docs'
         }],
+        nav: nav(),
+        sidebar: sidebar(),
         editLink: {
             pattern: 'https://github.com/xiaoshunshi/vitepress-docs/tree/main/docs/:path',
             text: '编辑链接'
@@ -105,8 +45,10 @@ export default {
     },
     markdown: {
         config: (md) => {
-          const { demoBlockPlugin } = require('vitepress-theme-demoblock')
-          md.use(demoBlockPlugin)
+            const {
+                demoBlockPlugin
+            } = require('vitepress-theme-demoblock')
+            md.use(demoBlockPlugin)
         }
-      }
+    }
 };

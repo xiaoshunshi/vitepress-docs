@@ -6,7 +6,7 @@ const { Layout } = DefaultTheme;
 
 <template>
   <Layout>
-    <template #doc-footer-before> <div class="center">doc-footer-before</div> </template>
+   
     <template #aside-outline-before> <div class="center">CONTENTS</div> </template>
     <template #aside-outline-after>
       <div class="aside-outline-title">菜 鸟 少 年</div>
@@ -15,6 +15,7 @@ const { Layout } = DefaultTheme;
         <div class="aside-outline">老夫年少轻狂搭建Vite个人博客</div>
       </div>
     </template>
+     <template #doc-footer-before> <div class="center">doc-footer-before</div> </template>
   </Layout>
 </template>
 <style scoped>
@@ -25,7 +26,7 @@ const { Layout } = DefaultTheme;
 .aside-outline-title {
   text-align: center;
   color: #646cff;
-  margin-bottom: 20px;
+  margin: 20px 0;
   direction: rtl;
   unicode-bidi: bidi-override;
 }
