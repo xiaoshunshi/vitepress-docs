@@ -91,7 +91,7 @@ export default {
         },
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2019-present Xiao Shunshi'
+            copyright: 'Copyright © 2022-present Xiao Shunshi'
         },
         carbonAds: {
             code: 'CEBDT27Y',
