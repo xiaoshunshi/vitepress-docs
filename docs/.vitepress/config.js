@@ -21,21 +21,25 @@ export default {
                 link: '/guide/installation',
                 activeMatch: '/guide/',
             },
-            // {
-            //     text: 'Dropdown Menu',
-            //     items: [{
-            //         // You may also omit the title.
-            //         items: [{
-            //                 text: 'Section A Item A',
-            //                 link: '...'
-            //             },
-            //             {
-            //                 text: 'Section B Item B',
-            //                 link: '...'
-            //             }
-            //         ]
-            //     }]
-            // }
+            {
+                text: '教程',
+                items: [{
+                    // You may also omit the title.
+                    items: [{
+                            text: '前端',
+                            link: '/html/html'
+                        },
+                        {
+                            text: '后端',
+                            link: '/node/node'
+                        },
+                        {
+                            text: '数据库',
+                            link: '/sql/mysql'
+                        }
+                    ]
+                }]
+            }
         ],
         sidebar: [{
             text: '指南',
@@ -48,6 +52,36 @@ export default {
                 {
                     text: '快速开始',
                     link: '/guide/quieStart'
+                }
+            ]
+        },
+        {
+            text: '前端',
+            items: [
+                // This shows `/guide/index.md` page.
+                {
+                    text: 'Html',
+                    link: '/html/html'
+                }
+            ]
+        },
+        {
+            text: '后端',
+            items: [
+                // This shows `/guide/index.md` page.
+                {
+                    text: 'Node',
+                    link: '/node/node'
+                }
+            ]
+        },
+        {
+            text: '数据库',
+            items: [
+                // This shows `/guide/index.md` page.
+                {
+                    text: 'mysql',
+                    link: '/sql/mysql'
                 }
             ]
         }],
