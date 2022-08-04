@@ -1,7 +1,7 @@
-import { nav } from './config/nav';
 import {
-    sidebar
-} from './config/sidbar'
+    nav
+} from './config/nav';
+import * as sidbarConf from './config/sidbar'
 export default {
     title: "Xiao Shunshi",
     description: "Just playing around.",
@@ -24,7 +24,12 @@ export default {
             link: 'https://github.com/xiaoshunshi/vitepress-docs'
         }],
         nav: nav(),
-        sidebar: sidebar(),
+        sidebar: {
+            'guide': sidbarConf.sidebarGuide(),
+            'html': sidbarConf.sidebarHtml(),
+            'node': sidbarConf.sidebarNode(),
+            'sql': sidbarConf.sidebarSql()
+        },
         editLink: {
             pattern: 'https://github.com/xiaoshunshi/vitepress-docs/tree/main/docs/:path',
             text: '编辑链接'
@@ -52,3 +57,4 @@ export default {
         }
     }
 };
+
