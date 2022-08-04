@@ -1,16 +1,20 @@
 export default {
-    title: "小顺石的VitePress博客",
+    title: "Xiao Shunshi",
     description: "Just playing around.",
     base: '/vitepress-docs/',
-    head:[
-        ['link', { rel: 'icon', href: '/vitepress-docs/favicon.ico' }]
+    head: [
+        ['link', {
+            rel: 'icon',
+            href: '/vitepress-docs/favicon.ico'
+        }]
     ],
+    prev: 'Get Started | Markdown',
     lastUpdated: true,
     themeConfig: {
-        logo:'/logo.jpeg',
+        logo: '/logo.jpeg',
         // siteTitle: "My Custom Title", // 可设置为false
         lastUpdatedText: '最后修改时间',
-        outlineTitle:'目录',
+        outlineTitle: '目录',
         nav: [{
                 text: '指南',
                 link: '/guide/installation',
@@ -57,11 +61,17 @@ export default {
         carbonAds: {
             code: 'CEBDT27Y',
             placement: 'vuejsorg'
-          },
-          algolia: {
+        },
+        algolia: {
             appId: '8J64VVRP8K',
             apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
             indexName: 'vitepress'
-          },
+        },
     },
+    markdown: {
+        config: (md) => {
+          const { demoBlockPlugin } = require('vitepress-theme-demoblock')
+          md.use(demoBlockPlugin)
+        }
+      }
 };
