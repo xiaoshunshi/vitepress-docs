@@ -10,7 +10,8 @@ export function nav(){
             // You may also omit the title.
             items: [{
                     text: '前端',
-                    link: '/html/html'
+                    link: '/html/html',
+                    activeMatch: '/html/',
                 },
                 {
                     text: '后端',
